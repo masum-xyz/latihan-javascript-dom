@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan DOM</title>
+    <style>
+        body {
+            text-align: center;
+            height: 100rem;
+        }
+
+        .biru-muda {
+            background-color: lightblue;
+        }
+
+        .kotak {
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            margin: 10px auto;
+        }
+
+        .merah {
+            /* background-color: red; */
+        }
+
+        .bulatM {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: red;
+            color: red;
+        }
+
+        .bulatH {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: green;
+            color: green;
+        }
+
+        .bulatB {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: blue;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>Bermain Dengan Warna</H1>
+    <button type="button" id="btnUbahWarna">Ubah Warna</button>
+    <br><br>
+
+    <div class="kotak merah">
+        <div class="bulatM">mss</div>
+        <input type="range" name="sMerah" min="1" max="255">
+    </div>
+    <div class="kotak hijau">
+        <div class="bulatH">mss</div>
+        <input type="range" name="sHijau" min="1" max="255">
+    </div>
+
+    <div class="kotak biru">
+        <div class="bulatB">mss</div>
+        <input type="range" name="sBiru" min="1" max="255">
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
